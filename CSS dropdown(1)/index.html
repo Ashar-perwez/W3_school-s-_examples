@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoverable dropdown</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 170px;
+            box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 2) ;
+            padding: 10px 14px;
+            z-index: 1;
+
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <h2>Howerable Dropdown</h2>
